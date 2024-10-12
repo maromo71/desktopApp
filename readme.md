@@ -1,4 +1,3 @@
-![img.png](img.png)
 
 ## Tecnologias Abordadas
 ### 1. Swing (Interface Gráfica)

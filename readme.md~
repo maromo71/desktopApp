@@ -25,20 +25,20 @@ O aplicativo será uma aplicação desktop simples para gerenciar clientes com a
 4.	Excluir Clientes:
 	O usuário poderá excluir um cliente selecionando-o na tabela e clicando no botão "Excluir". O cliente será removido do banco de dados e a tabela será atualizada.
                    
-Estrutura dos Pacotes
+## Estrutura dos Pacotes
 1. Pacote model
-•	Este pacote contém a classe Cliente, que é a entidade do projeto. A classe Cliente representa um cliente no sistema e será mapeada para uma tabela no banco de dados MySQL usando o Hibernate.
-•	Cada instância de Cliente terá um id, nome, e email. O id será gerado automaticamente pelo banco de dados.
+    Este pacote contém a classe Cliente, que é a entidade do projeto. A classe Cliente representa um cliente no sistema e será mapeada para uma tabela no banco de dados MySQL usando o Hibernate.
+	Cada instância de Cliente terá um id, nome, e email. O id será gerado automaticamente pelo banco de dados.
 2. Pacote persistence
-•	Este pacote contém as classes responsáveis pela persistência de dados no banco de dados.
-•	A classe HibernateUtil fornecerá a configuração necessária para o Hibernate se conectar ao banco de dados e criar uma sessão para realizar as operações de banco.
-•	A classe ClienteDAO (Data Access Object) gerenciará as operações de inserção, leitura, atualização e exclusão (CRUD) dos clientes no banco de dados.
+	Este pacote contém as classes responsáveis pela persistência de dados no banco de dados.
+	A classe HibernateUtil fornecerá a configuração necessária para o Hibernate se conectar ao banco de dados e criar uma sessão para realizar as operações de banco.
+	A classe ClienteDAO (Data Access Object) gerenciará as operações de inserção, leitura, atualização e exclusão (CRUD) dos clientes no banco de dados.
 3. Pacote view
-•	Este pacote contém a interface gráfica, onde os usuários interagem com a aplicação.
-•	A classe ClienteView será a janela da aplicação, com campos de texto para digitar o nome e o email do cliente, além de botões para as operações CRUD (Salvar, Alterar, Excluir).
-•	Também terá uma JTable para exibir a lista de clientes cadastrados no banco.
+    Este pacote contém a interface gráfica, onde os usuários interagem com a aplicação.
+	A classe ClienteView será a janela da aplicação, com campos de texto para digitar o nome e o email do cliente, além de botões para as operações CRUD (Salvar, Alterar, Excluir).
+	Também terá uma JTable para exibir a lista de clientes cadastrados no banco.
 4. Classe GerenciarClientes
-•	A classe GerenciarClientes ficará fora dos pacotes e será responsável por iniciar o aplicativo. Ela conterá o método main, que executará a janela ClienteView.
+    A classe GerenciarClientes ficará fora dos pacotes e será responsável por iniciar o aplicativo. Ela conterá o método main, que executará a janela ClienteView.
 
 ## Fluxo do Aplicativo
 1.	Início: A aplicação é iniciada pela classe GerenciarClientes, que abre a janela ClienteView.
@@ -48,3 +48,6 @@ Estrutura dos Pacotes
 3.	Persistência: O Hibernate é responsável por conectar o aplicativo ao banco de dados MySQL e realizar todas as operações de CRUD (inserir, listar, atualizar e excluir).
 4.	Exibição de Dados: A JTable na interface gráfica é constantemente atualizada para refletir o estado atual do banco de dados.
                     
+
+ 
+ 
